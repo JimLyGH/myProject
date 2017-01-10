@@ -37,3 +37,6 @@ git branch -d bran_x
 查看提交历史
 git log
 git log -p file
+
+撤销提交
+git reset 
