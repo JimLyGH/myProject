@@ -8,6 +8,9 @@ git clone git@github.com:JimLyGH/myProject.git
 记得初始化:
 git init
 
+远程拉代码
+git pull
+
 git status
 提交文件：
 git add file
@@ -30,3 +33,7 @@ git merge bran_x
 
 删除分支bran_x
 git branch -d bran_x
+
+查看提交历史
+git log
+git log -p file
