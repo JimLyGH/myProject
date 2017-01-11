@@ -35,4 +35,3 @@ alter system kill session 'sid,serial#';
 
 
 
-
