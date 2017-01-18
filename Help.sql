@@ -34,4 +34,8 @@ where lo.SESSION_ID = s.SID and lo.OBJECT_ID = uo.OBJECT_ID;
 alter system kill session 'sid,serial#';
 
 
+--查询对公客户
+select a.fnc_trans_acct_no, a.cust_no, a.acct_no, a.acct_nm, a.card_no, i.id_code
+from t1_cust_fnc_acct a,t1_cust_info i
+where a.fnc_trans_acct_no = i.main_trans_acct_no and i.cust_type='C' and a.acct_status = '0';
 
