@@ -22,7 +22,12 @@ git push
 删除文件
 git rm file file2 ...
 git commit -m "commit info"
+
+上传本地所有分支代码到远程对应的分支上
 git push
+
+上传本地当前分支代码到master分支
+git push origin master
 
 新建分支bran_x并切换到分支bran_x下
 git checkout -b bran_x
