@@ -1,0 +1,2 @@
+查看连接数
+ps -ef | grep ESTABLISHED | grep 8990 | wc -l
