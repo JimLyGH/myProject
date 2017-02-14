@@ -1,2 +1,5 @@
 查看连接数
 ps -ef | grep ESTABLISHED | grep 8990 | wc -l
+
+三秒监控一次文件个数  -d高亮显示
+watch -n 3 -d 'ls | wc -l'
