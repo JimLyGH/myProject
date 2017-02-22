@@ -41,3 +41,8 @@ where a.fnc_trans_acct_no = i.main_trans_acct_no and i.cust_type='C' and a.acct_
 
 --新建视图
 create or replace view t7_productinfo_view as select * from t7_productinfo;
+
+--获取表的列明，以一行的形式呈现
+select to_char(wm_concat(column_name))
+from user_col_comments
+where object_name = upper('t7_prodduct_info');
