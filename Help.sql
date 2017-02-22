@@ -39,3 +39,5 @@ select a.fnc_trans_acct_no, a.cust_no, a.acct_no, a.acct_nm, a.card_no, i.id_cod
 from t1_cust_fnc_acct a,t1_cust_info i
 where a.fnc_trans_acct_no = i.main_trans_acct_no and i.cust_type='C' and a.acct_status = '0';
 
+--新建视图
+create or replace view t7_productinfo_view as select * from t7_productinfo;
