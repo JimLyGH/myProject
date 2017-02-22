@@ -1,0 +1,90 @@
+/L20"kkf2" Line Comment = -- Escape Char = \ Block Comment On = [[ Block Comment Off = ]] String Chars = "' File Extensions = kkf2 BIN
+/Colors = 0,8421376,8421376,8421504,255,
+/Colors Back = 13430215,13430215,13430215,13430215,13430215,
+/Colors Auto Back = 1,1,1,1,1,
+/Font Style = 0,0,0,0,0,
+/Delimiters = ~!@%^&*()-+=|\/{}[]:;"'<> ,	.?
+/Function String = "%[a-zA-Z]*)"
+/C1 "key words" Colors = 16711680 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
+and
+do
+else elseif end
+function
+if
+local
+nil not
+or
+repeat return
+then
+until
+while
+/C2 Colors = 255 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
+abs acos appendto ascii asin assert atan atan2
+call ceil clock collectgarbage copytagmethods cos
+date deg dofile dostring
+error execute exit
+floor foreach foreachvar format frexp
+getbinmethod getenv getglobal gettagmethod gsub
+ldexp log log10
+max min mod
+newtag next nextvar
+print
+rad random randomseed rawgetglobal rawgettable rawsetglobal rawsettable read
+readfrom remove rename
+seterrormethod setglobal setlocale settag settagmethod sin sqrt strbyte
+strchar strfind strlen strlower strrep strsub strupper
+tag tan tmpname tonumber tostring type
+write writeto
+/C3 Colors = 33023 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
+$debug
+$else
+$end
+$endinput
+$if
+$ifnot
+$nodebug
+/C4 Colors = 32768 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
+PI
+_INPUT _OUTPUT _STDERR _STDIN _STDOUT
+/C5 Colors = 4210816 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
++
+-
+*
+// /
+^
+<
+>
+=
+~
+%
+.
+:
+/C6 Colors = 16711680 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
+;
+,
+(
+)
+{
+}
+[
+]
+/C7 Colors = 16711680 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
+cgi cgikkf2 cgikkf2_url char2hexa chdir
+dbkkf2errorfb dbkkf2_escape decode default_script
+encodecgi encodetable escape
+filetype
+getvalue
+hexa hexa2char html_mask
+includehtml insertfield
+kkf2_mask
+maketable map mkurl
+nopipe
+preprocess
+redirect relativeurl relative_url
+savekkf2var savestate script_path script_pdir script_vdir stateerrormethod
+statefile stdin strsplit
+unescape
+/C8 Colors = 16711680 Colors Back = 13430215 Colors Auto Back = 1 Font Style = 0
+DBClose DBExec DBOpen DBRow
+
+
