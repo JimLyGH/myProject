@@ -46,3 +46,7 @@ create or replace view t7_productinfo_view as select * from t7_productinfo;
 select to_char(wm_concat(column_name))
 from user_col_comments
 where object_name = upper('t7_prodduct_info');
+
+--create or replace view和create view区别
+--create or replace view若数据库存在视图，则替换它，否则新建
+--create view不进行判断，若存在视图，则报错	
