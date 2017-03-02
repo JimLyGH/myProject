@@ -10,19 +10,23 @@ where a.acct_serno = sa.acct_serno and a.prod_code = 'LJCSCP001';
 
 --添加字段的语法：
 alter table tablename add (column datatype [default value][null/not null],….);
-
-
+--例子:
+alter table t7_insurer_acctno add insulocal varchar(5) not null;
 --修改字段的语法：
 alter table tablename modify (column datatype [default value][null/not null],….);
 alter table TABLE_NAME rename column FIELD_NAME to NEW_FIELD_NAME;
 
-
 --删除字段的语法：
 alter table tablename drop (column);
 
-
 --重命名表
 ALTER TABLE table_name RENAME TO new_table_name;
+
+--操作表主键
+--删除主键
+alter table t7_insurer_acctno drop primary key;
+--新增主键
+alter table t7_insurer_acctno add constraint t7_insurer_acctno_pk primary key(insuid, acct_type, insulocal);
 
 
 --查看锁表情况
@@ -49,4 +53,14 @@ where object_name = upper('t7_prodduct_info');
 
 --create or replace view和create view区别
 --create or replace view若数据库存在视图，则替换它，否则新建
---create view不进行判断，若存在视图，则报错	
+--create view不进行判断，若存在视图，则报错
+
+with a as (select * from sys_menu)
+select * from a;
+
+with n(a, b) as (select 1 as a, 2 as b from dual)
+select a, b from n; 
+
+
+
+

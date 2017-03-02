@@ -3,3 +3,6 @@ ps -ef | grep ESTABLISHED | grep 8990 | wc -l
 
 三秒监控一次文件个数  -d高亮显示
 watch -n 3 -d 'ls | wc -l'
+
+排除指定文件夹(7)查找
+grep -rn --exclude-dir="7" "123" *
