@@ -49,10 +49,13 @@
 
 	var xmlDoc = loadXML("<root><head>1111</head><body><username>zhangsan</username><age>12</age></body></root>")
 	var elements = xmlDoc.getElementsByTagName("body");
+//	var ip = elements[0].getElementsByTagName("age")[0].getAttribute("value"); 
 
 	for (var i = 0; i < elements.length; i++) {
 		var name = elements[i].getElementsByTagName("username")[0].firstChild.nodeValue;
-		var ip = elements[i].getElementsByTagName("age")[0].firstChild.nodeValue;     
+		var ip = elements[i].getElementsByTagName("age")[0].firstChild.nodeValue;    
+		//<age value="1"></age> 获取age标签的属性value的值
+		//var ip = elements[i].getElementsByTagName("age")[0].getAttribute("value"); 
 		console.log(name + "   " + ip)
 	}
 
