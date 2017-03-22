@@ -61,6 +61,14 @@ select * from a;
 with n(a, b) as (select 1 as a, 2 as b from dual)
 select a, b from n; 
 
+--合计  rollup cube
+select t.insutype, sum(t.premium)
+from t7_app_h_trans t
+group by rollup(t.insutype);
+
+select t.insutype, sum(t.premium)
+from t7_app_h_trans t
+group by cube(t.insutype);
 
 
 
