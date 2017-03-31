@@ -13,8 +13,10 @@ grep -rn --exclude-dir="7" "123" *
 
 linux sftp上传
 
-登录sftp 
-user@host IP  or sftp user.pwd@host IP:port
+登录
+sftp user@host IP  
+lftp使用sftp登录服务器
+lftp -u uname:pwd sftp://ip:port
 
 举例说明：
 查看ftp服务器文件列表:ls
