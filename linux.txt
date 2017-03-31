@@ -11,3 +11,20 @@ grep -rn --exclude-dir="7" "123" *
 只显示文件夹：ll | grep ^d
 只显示文件：ll | grep ^-
 
+linux sftp上传
+
+登录sftp 
+user@host IP  or sftp user.pwd@host IP:port
+
+举例说明：
+查看ftp服务器文件列表:ls
+在ftp服务器查看本地文件列表:lls (即在命令前加l即可)
+其他命令同理
+
+单个文件上传
+put /home/bizware/log/text.txt /home/bizware/upload/
+mput 批量上传
+
+单个文件下载
+get cpp.txt /home/download/
+mget 批量下载
