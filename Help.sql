@@ -70,5 +70,20 @@ select t.insutype, sum(t.premium)
 from t7_app_h_trans t
 group by cube(t.insutype);
 
+--导出表结构
+select c.COLUMN_ID 序号, c.COLUMN_NAME 列名, c.DATA_TYPE 数据类型, c.DATA_LENGTH 长度, c.DATA_SCALE 小数位, 
+       to_char(wm_concat(uc.constraint_type)) 主键,
+       decode(c.NULLABLE, 'Y', '是', 'N', '否', '其他') 允许为空/*, c.DATA_DEFAULT 默认值*/, ucc.comments 说明
+from user_tab_cols c
+left join user_col_comments ucc on ucc.table_name = c.TABLE_NAME and ucc.column_name = c.COLUMN_NAME
+left join user_cons_columns ucs on ucs.table_name = c.TABLE_NAME and ucs.column_name = c.COLUMN_NAME
+left join user_constraints uc on uc.table_name = c.TABLE_NAME and uc.constraint_name = ucs.constraint_name
+where lower(c.TABLE_NAME) = 't7_policyinfo'
+group by c.COLUMN_ID, c.COLUMN_NAME, c.DATA_TYPE, c.DATA_LENGTH, c.DATA_SCALE, c.NULLABLE, ucc.comments
+order by c.COLUMN_ID;
 
+--row_number() over()用法
+--解释：先根据moduleid分组,分组后的结果再根据paraid排序 
+select *, row_number() over(partition by moduleid order by paramid) rank
+from sys_param;
 
