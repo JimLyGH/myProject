@@ -2,13 +2,13 @@ package com.jimly.kayak.cases.demo3;
 
 public interface Women {
 
-	/** 做饭 Women */
+	/** 鍋氶キ Women */
 	public void cook();
 	
-	/** 说话 Women */
+	/** 璇磋瘽 Women */
 	public void say();
 	
-	/** 走路 Women */
+	/** 璧拌矾 Women */
 	public int walk();
 	
 }

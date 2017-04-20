@@ -17,7 +17,7 @@ public class JimLy201704 {
 		worker.say("lisi");
 		
 		System.out.println("######################################################");
-		char a = 'ºÅ';
+		char a = 'å·';
 		System.out.println(a);
 		
 		char b = 97;
@@ -39,8 +39,8 @@ public class JimLy201704 {
 		System.out.println(p1.say("lisi"));
 		
 		System.out.println("######################################################");
-		Integer a = 3;	//×Ô¶¯×°Ïä,Êµ¼ÊInteger a = new Integer(3);
-		int b = a;		//×Ô¶¯²ğÏä,Êµ¼Êint b = a.intValue();
+		Integer a = 3;	//è‡ªåŠ¨è£…ç®±,å®é™…Integer a = new Integer(3);
+		int b = a;		//è‡ªåŠ¨æ‹†ç®±,å®é™…int b = a.intValue();
 		System.out.println("b = " + b);
 		
 		System.out.println("######################################################");

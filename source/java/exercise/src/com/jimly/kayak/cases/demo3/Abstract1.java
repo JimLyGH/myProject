@@ -6,6 +6,6 @@ public abstract class Abstract1 implements People{
 		System.out.println("China");
 	}
 	
-	/** ÐÔ±ð Abstract1 */
+	/** æ€§åˆ« Abstract1 */
 	public abstract void sex();
 }

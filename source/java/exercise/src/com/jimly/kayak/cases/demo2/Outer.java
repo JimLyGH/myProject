@@ -1,7 +1,7 @@
 package com.jimly.kayak.cases.demo2;
 
 /**
- * ¾²Ì¬·½·¨ÖĞÃ»ÓĞthis,Òò´ËERROR1ºÍERROR2´¦»á±àÒë³ö´í
+ * é™æ€æ–¹æ³•ä¸­æ²¡æœ‰this,å› æ­¤ERROR1å’ŒERROR2å¤„ä¼šç¼–è¯‘å‡ºé”™
  * */
 public class Outer {
 	private String name;
@@ -24,8 +24,8 @@ public class Outer {
 	}
 	
 	public void bar() {
-		System.out.println(name + " bar");	//ÄÚ²¿Àà¿ÉÒÔÊ¹ÓÃÍâ²¿ÀàµÄ±äÁ¿(°üÀ¨Ë½ÓĞ±äÁ¿)
-		new Inner();	//µÈ¼ÛÓÚthis.new Inner();
+		System.out.println(name + " bar");	//å†…éƒ¨ç±»å¯ä»¥ä½¿ç”¨å¤–éƒ¨ç±»çš„å˜é‡(åŒ…æ‹¬ç§æœ‰å˜é‡)
+		new Inner();	//ç­‰ä»·äºthis.new Inner();
 	}
 	
 	public static void main(String[] args) {

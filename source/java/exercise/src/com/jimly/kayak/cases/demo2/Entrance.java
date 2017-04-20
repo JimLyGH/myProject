@@ -23,7 +23,7 @@ public class Entrance {
 		innerClass2.method();
 		innerClass2.work("wangwu");
 		
-		System.out.println("########## ÄäÃûÄÚ²¿Àà  ##########");
+		System.out.println("########## åŒ¿åå†…éƒ¨ç±»  ##########");
 		Fruit fruit = new Fruit(1) {
 			@Override
 			public void apple() {
@@ -40,7 +40,7 @@ public class Entrance {
 		tel.company();
 		tel.call();
 		
-		System.out.println("########## ¾²Ì¬ÄÚ²¿Àà  ##########");
+		System.out.println("########## é™æ€å†…éƒ¨ç±»  ##########");
 		Telphone telphone = new Telphone(1);
 		telphone.company();
 		System.out.println("----------------------------");

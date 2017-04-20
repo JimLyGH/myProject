@@ -1,19 +1,19 @@
 package com.jimly.kayak.cases.demo3;
 
 /**
- * ½Ó¿ÚÖ§³Ö¶à¼Ì³Ğ,Àà²»Ö§³Ö¶à¼Ì³Ğ
+ * æ¥å£æ”¯æŒå¤šç»§æ‰¿,ç±»ä¸æ”¯æŒå¤šç»§æ‰¿
  * */
 public interface People extends Man, Women{
 	
-	/** Í· People */
+	/** å¤´ People */
 	public void head();
 	
-	/** ÊÖ People */
+	/** æ‰‹ People */
 	public void hand();
 	
-	/** ÑÛ¾¦ People */
+	/** çœ¼ç› People */
 	public void eye();
 
-	/** ½Å  People */
+	/** è„š  People */
 	public void foot();
 }
