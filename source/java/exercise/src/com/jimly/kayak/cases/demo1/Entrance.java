@@ -1,4 +1,4 @@
-package com.jimly.kayak.cases.one;
+package com.jimly.kayak.cases.demo1;
 
 public class Entrance {
 

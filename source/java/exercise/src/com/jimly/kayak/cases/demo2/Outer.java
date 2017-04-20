@@ -1,9 +1,14 @@
-package com.jimly.kayak.cases.two;
+package com.jimly.kayak.cases.demo2;
 
 /**
  * 静态方法中没有this,因此ERROR1和ERROR2处会编译出错
  * */
 public class Outer {
+	private String name;
+	
+	public Outer() {
+		this.name = "zhangsan";
+	}
 	
 	class Inner{
 		public Inner() {
@@ -19,7 +24,7 @@ public class Outer {
 	}
 	
 	public void bar() {
-		System.out.println("bar");
+		System.out.println(name + " bar");	//内部类可以使用外部类的变量(包括私有变量)
 		new Inner();	//等价于this.new Inner();
 	}
 	
