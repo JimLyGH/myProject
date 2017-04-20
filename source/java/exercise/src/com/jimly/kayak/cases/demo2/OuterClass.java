@@ -30,8 +30,8 @@ public class OuterClass {
 			System.out.println("InnerClass1 method");
 		}
 		
-		public void say(String toName) {
-			System.out.println(name + " say hello to " + toName);
+		public void say(String name) {
+			System.out.println(OuterClass.this.name + " say hello to " + name);
 		}
 		
 	}
