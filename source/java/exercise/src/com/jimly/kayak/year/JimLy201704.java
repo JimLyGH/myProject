@@ -9,8 +9,13 @@ public class JimLy201704 {
 		
 		
 		
-		
 		/**
+		System.out.println("######################################################");
+		Person.work();
+		System.out.println("-----------------------------------------------------");
+		Worker worker = new Worker();
+		worker.say("lisi");
+		
 		System.out.println("######################################################");
 		char a = 'ºÅ';
 		System.out.println(a);
