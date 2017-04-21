@@ -93,8 +93,9 @@ public class Junit {
 		Integer b = 3;
 		int c = 3;
 		System.out.println("a == b :" + (a == b));
-		System.out.println("a == c :" + (a == c));
-		System.out.println("b == c :" + (b == c));
+		System.out.println("a == b :" + (a.intValue() == b));
+		System.out.println("a == c :" + (a == c));	//此处a会自动拆箱
+		System.out.println("b == c :" + (b == c));	//此处b会自动拆箱
 		
 		/**
 		 * 运行结果：
