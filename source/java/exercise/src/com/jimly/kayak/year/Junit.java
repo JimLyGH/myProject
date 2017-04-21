@@ -100,6 +100,7 @@ public class Junit {
 		/**
 		 * 运行结果：
 		 * 	a == b :false
+			a == b :true
 			a == c :true
 			b == c :true
 		 * */
