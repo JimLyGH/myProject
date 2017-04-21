@@ -1,0 +1,26 @@
+API：	应用编程接口		Application Programming Interface
+ISP：	接口隔离原则		
+AOP:	面向切面编程		Aspect Oriented Programming
+DI ： 	依赖注入			Dependency Injection
+IOC：	控制反转			Inversion Of Control
+EJB：	Java企业Bean		Enterprice JavaBean
+JNI：	java本地编程接口	Java Native Interface
+JDBC：	Java数据库连接		Java DataBase Connectivity
+JSP：	Java服务器端页面	Java Server Pages
+JVM：	Java虚拟机			Java Virtual Machine
+JRE：	Java运行环境		Java Runtime Environment
+JDK：	Java开发工具包		Java Development Kit
+J2EE：	Java2企业版			Java 2 Enterprise Edition
+J2SE：	Java2标准版			Java 2 Standard Edition
+POJO：	简单的Java对象		Plain Ordinary Java Object
+DAO：	数据访问对象		Data Access Object
+DTO：	数据传输对象		Data Transfer Object
+ORM		对象关系映射		Object Relational Mapping
+
+UI：	表现层(用户界面)	User Interface
+BLL:	业务逻辑层			Business Logic Layer
+DAL:	数据访问层			Data Access Layer
+
+OOA：	面向对象分析		Object Oriented Analysis
+OOD：	面向对象设计		Object Oriented Design
+OOP：	面向对象编程		Object Oriented Programming
