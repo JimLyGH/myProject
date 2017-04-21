@@ -2,32 +2,41 @@ package com.jimly.kayak.year;
 
 import java.lang.reflect.Method;
 
+import org.junit.Test;
 
-public class JimLy201704 {
 
-	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-		
-		
-		
-		/**
-		System.out.println("######################################################");
+public class Junit {
+
+	@Test
+	public void test1() {
+		System.out.println("########## TEST 1  ##########");
 		Person.work();
 		System.out.println("-----------------------------------------------------");
 		Worker worker = new Worker();
 		worker.say("lisi");
-		
-		System.out.println("######################################################");
+	}
+	
+	@Test
+	public void test2() {
+		System.out.println("########## TEST 2  ##########");
 		char a = '号';
 		System.out.println(a);
 		
 		char b = 97;
 		System.out.println(b);
-		
-		System.out.println("######################################################");
+	}
+
+	@Test
+	public void test3() {
+		System.out.println("########## TEST 3  ##########");
 		Runtime.getRuntime().gc();
 		System.gc();
-		
-		System.out.println("######################################################");
+	}
+	
+	@Test
+	@SuppressWarnings("rawtypes")
+	public void test4() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		System.out.println("########## TEST 4  ##########");
 		Class cla = Class.forName("com.jimly.kayak.year.Person");
 		Person p = (Person) cla.newInstance();
 		
@@ -37,21 +46,30 @@ public class JimLy201704 {
 		System.out.println(p.say("zhangsan"));
 		Person p1 = new Person();
 		System.out.println(p1.say("lisi"));
-		
-		System.out.println("######################################################");
+	}
+	
+	@Test
+	public void test5() {
+		System.out.println("########## TEST 5  ##########");
 		Integer a = 3;	//自动装箱,实际Integer a = new Integer(3);
 		int b = a;		//自动拆箱,实际int b = a.intValue();
 		System.out.println("b = " + b);
-		
-		System.out.println("######################################################");
+	}
+	
+	@Test
+	public void test6() {
+		System.out.println("########## TEST 6  ##########");
 		Integer a = new Integer(3);
 		Integer b = 3;
 		int c = 3;
 		System.out.println("a == b :" + (a == b));
 		System.out.println("a == c :" + (a == c));
 		System.out.println("b == c :" + (b == c));
-		
-		System.out.println("######################################################");
+	}
+	
+	@Test
+	public void test7() {
+		System.out.println("########## TEST 7  ##########");
 		//-128 <= value <= 127 
 		Integer x = new Integer(127);
 		Integer y = new Integer(127);
@@ -63,9 +81,21 @@ public class JimLy201704 {
 		Integer n = new Integer(128);
 		System.out.println("m == n :" + (m == n));
 		System.out.println("m == n :" + (Integer.valueOf(m) == Integer.valueOf(n)));
-		System.out.println("######################################################");
-		*/
 	}
 	
+	@Test
+	public void test8() {
+
+	}
+	
+	@Test
+	public void test9() {
+
+	}
+	
+	@Test
+	public void test10() {
+
+	}
 	
 }
