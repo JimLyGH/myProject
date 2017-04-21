@@ -14,6 +14,16 @@ public class Junit {
 		System.out.println("-----------------------------------------------------");
 		Worker worker = new Worker();
 		worker.say("lisi");
+		
+		/**
+		 * 运行结果：
+		 *	zhangsan work
+			person zhangsan say
+			-----------------------------------------------------
+			zhangsan work
+			person zhangsan say
+			Worker lisi say
+		 * */
 	}
 	
 	@Test
@@ -24,6 +34,12 @@ public class Junit {
 		
 		char b = 97;
 		System.out.println(b);
+		
+		/**
+		 * 运行结果：
+		 * 	号
+			a
+		 * */
 	}
 
 	@Test
@@ -46,6 +62,15 @@ public class Junit {
 		System.out.println(p.say("zhangsan"));
 		Person p1 = new Person();
 		System.out.println(p1.say("lisi"));
+		
+		/**
+		 * 运行结果：
+		 * 	work
+			person zhangsan say
+			zhangsan
+			person lisi say
+			lisi
+		 * */
 	}
 	
 	@Test
@@ -54,6 +79,11 @@ public class Junit {
 		Integer a = 3;	//自动装箱,实际Integer a = new Integer(3);
 		int b = a;		//自动拆箱,实际int b = a.intValue();
 		System.out.println("b = " + b);
+		
+		/**
+		 * 运行结果：
+		 * b = 3
+		 * */
 	}
 	
 	@Test
@@ -65,6 +95,13 @@ public class Junit {
 		System.out.println("a == b :" + (a == b));
 		System.out.println("a == c :" + (a == c));
 		System.out.println("b == c :" + (b == c));
+		
+		/**
+		 * 运行结果：
+		 * 	a == b :false
+			a == c :true
+			b == c :true
+		 * */
 	}
 	
 	@Test
@@ -81,6 +118,14 @@ public class Junit {
 		Integer n = new Integer(128);
 		System.out.println("m == n :" + (m == n));
 		System.out.println("m == n :" + (Integer.valueOf(m) == Integer.valueOf(n)));
+		
+		/**
+		 * 运行结果：
+		 * 	x == y :false
+			x == y :true
+			m == n :false
+			m == n :false
+		 * */
 	}
 	
 	@Test
