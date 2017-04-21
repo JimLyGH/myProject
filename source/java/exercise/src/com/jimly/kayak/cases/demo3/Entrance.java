@@ -36,7 +36,23 @@ public class Entrance {
 		abstract3.read();
 		abstract3.sleep();
 		
-		
 	}
 	
 }
+
+
+/**
+ * 执行结果：
+ *	 ########## CLASS ONE  ##########
+	Man work
+	Women cook
+	People head
+	China
+	########## CLASS TWO  ##########
+	Abstract2 eat
+	Abstract2 driver
+	Abstract study
+	########## CLASS THREE  ##########
+	zhangsan read
+	zhangsan sleep
+ * */

@@ -54,6 +54,36 @@ public class Entrance {
 		iPhone.company();
 		System.out.println("----------------------------");
 	}
-	
 
 }
+
+
+/**
+ * 执行结果：
+ *	 ########## OuterClass  ##########
+	InnerClass1 init zhangsan
+	InnerClass2 init zhangsan
+	OuterClass method
+	########## Innerclass1  ##########
+	InnerClass1 init zhangsan
+	InnerClass1 method
+	zhangsan say hello to lisi
+	########## InnerClass2  ##########
+	InnerClass2 init zhangsan
+	InnerClass2 method
+	wangwu is working now
+	########## 匿名内部类  ##########
+	eat 1 apple
+	override company
+	Telphone call
+	########## 静态内部类  ##########
+	Telphone
+	----------------------------
+	XiaoMi init leijun
+	uName:leijun
+	XiaoMi
+	----------------------------
+	1
+	IPhone
+	----------------------------
+ * */

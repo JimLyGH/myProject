@@ -44,3 +44,14 @@ public class Entrance {
 	}
 	
 }
+
+
+/**
+ * 执行结果：
+ * 	Interface2 work
+	Interface1 eat
+	Abstract1 driver
+	Abstract2 cook
+	Class1 walk
+	Class2 sleep
+ * */

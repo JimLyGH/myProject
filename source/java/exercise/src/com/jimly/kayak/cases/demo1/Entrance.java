@@ -19,3 +19,14 @@ public class Entrance {
 	}
 	
 }
+
+
+/**
+ * 执行结果：
+ *	 Person say
+	Women cook
+	Man work
+	People zhangsan walk
+	man work is:IT
+	woman cook is:noodle
+ * */

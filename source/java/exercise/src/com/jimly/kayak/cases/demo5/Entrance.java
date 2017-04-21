@@ -30,5 +30,13 @@ public class Entrance {
 		b.b();
 	}
 	
-	
 }
+
+
+/**
+ * 执行结果
+ * 	aaa
+	ZZZ
+	------------------------
+	BBB
+ * */
