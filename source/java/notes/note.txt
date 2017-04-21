@@ -10,8 +10,8 @@ JSP：	Java服务器端页面	Java Server Pages
 JVM：	Java虚拟机			Java Virtual Machine
 JRE：	Java运行环境		Java Runtime Environment
 JDK：	Java开发工具包		Java Development Kit
-J2EE：	Java2企业版			Java 2 Enterprise Edition
-J2SE：	Java2标准版			Java 2 Standard Edition
+J2EE：	Java2平台企业版		Java 2 Platform Enterprise Edition
+J2SE：	Java2平台标准版		Java 2 Platform Standard Edition
 POJO：	简单的Java对象		Plain Ordinary Java Object
 DAO：	数据访问对象		Data Access Object
 DTO：	数据传输对象		Data Transfer Object
