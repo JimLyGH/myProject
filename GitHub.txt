@@ -48,8 +48,8 @@ git log -p file
 撤销提交
 git reset 
 
-
-
+查看远程端仓库权限
+git remote -v
 
 
 #################################
