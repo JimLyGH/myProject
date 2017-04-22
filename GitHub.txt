@@ -47,3 +47,4 @@ git log -p file
 
 撤销提交
 git reset 
+
