@@ -56,3 +56,5 @@ git remote -v
 GitHub Git Bash中文乱码解决：
 在对应的库下面.git(隐藏)文件夹下找到config文件
 编辑文件在最后一行加上:encoding = utf-8
+
+
