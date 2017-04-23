@@ -51,6 +51,9 @@ git reset
 查看远程端仓库权限
 git remote -v
 
+查看git项目的配置
+git config --list
+
 
 #################################
 GitHub Git Bash中文乱码解决：
