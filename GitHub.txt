@@ -38,8 +38,11 @@ git checkout master
 把分支bran_x上的内容合并到当前分支
 git merge bran_x
 
-删除分支bran_x
+删除本地分支bran_x
 git branch -d bran_x
+
+删除远程分支trunk_x
+git push origin :trunk_x
 
 查看提交历史
 git log
