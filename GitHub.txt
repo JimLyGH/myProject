@@ -51,8 +51,17 @@ git reset
 查看远程端仓库权限
 git remote -v
 
+
+
 查看git项目的配置
 git config --list
+全局配置
+git config --global user.name "username"
+取消全局配置
+git config --global --unset user.name
+
+进入文件夹,单独设置每个仓库的配置
+git config user.name "username"
 
 
 #################################
