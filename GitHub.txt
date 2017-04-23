@@ -45,7 +45,7 @@ git branch -d bran_x
 删除远程分支trunk_x,这等同于推送一个空的本地分支到远程分支
 git push origin :trunk_x
 等价于
- git push origin --delete trunk_x
+git push origin --delete trunk_x
 
 查看提交历史
 git log
@@ -68,6 +68,16 @@ git config --global --unset user.name
 
 进入文件夹,单独设置每个仓库的配置
 git config user.name "username"
+
+
+#################################
+新建分支trunk_x，并切换到trunk_x分支下
+git checkout -b trunk_x
+在分支下做改动后要提交内容执行以下命令(将本地trunk_x分支上的改动内容提交到远程master分支下)
+git push origin trunk_x:master
+
+如果要把本地分支trunk_x修改内容提交到远程分支trunk_x下
+git push origin trunk_x:trunk_x
 
 
 #################################
