@@ -42,8 +42,10 @@ git merge bran_x
 删除本地分支bran_x
 git branch -d bran_x
 
-删除远程分支trunk_x
+删除远程分支trunk_x,这等同于推送一个空的本地分支到远程分支
 git push origin :trunk_x
+等价于
+ git push origin --delete trunk_x
 
 查看提交历史
 git log
