@@ -1,8 +1,11 @@
-package com.jimly.kayak.year;
+package com.jimly.kayak.junit;
 
 import java.lang.reflect.Method;
 
 import org.junit.Test;
+
+import com.jimly.kayak.tool.Person;
+import com.jimly.kayak.tool.Worker;
 
 
 public class Junit {
@@ -53,7 +56,7 @@ public class Junit {
 	@SuppressWarnings("rawtypes")
 	public void test4() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		System.out.println("########## TEST 4  ##########");
-		Class cla = Class.forName("com.jimly.kayak.year.Person");
+		Class cla = Class.forName("com.jimly.kayak.tool.Person");
 		Person p = (Person) cla.newInstance();
 		
 		Method[] m = cla.getMethods();

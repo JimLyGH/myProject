@@ -1,4 +1,4 @@
-package com.jimly.kayak.year;
+package com.jimly.kayak.tool;
 
 public class Person {
 
