@@ -86,6 +86,9 @@ git push origin :trunk_x
 等价于
 git push origin --delete trunk_x
 
+合并远程仓库内容
+git merge origin/master
+
 查看提交历史
 git log
 git log -p file
