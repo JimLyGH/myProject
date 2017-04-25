@@ -14,6 +14,7 @@ git init
 git pull
 
 git status
+git status -s
 提交文件：
 git add file
 git commit -m "commit info"
