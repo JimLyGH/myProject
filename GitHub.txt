@@ -23,8 +23,42 @@ git push
 git rm file file2 ...
 git commit -m "commit info"
 
+####################################
+git add前
+--只对修改的文件有效果
+撤销对filename文件的操作
+git checkout -- filename
+撤销对所有文件的操作
+git checkout -- .
+
+#删除新建文件
+git clean -f   
+#连 untracked 的目录也一起删掉  
+git clean -fd 
+#在用上述 git clean前，强烈建议先执行git clean -n 看看会删掉哪些文件，防止重要文件被误删 
+git clean -n  
+
+git add后的撤销，即撤销缓存区文件
+#撤销对某个文件的add命令
+git reset head <文件名>   
+#撤销所有文件的add命令
+git reset head .  
+
+退回版本/撤销已暂存文件
+#先执行这条命令查看commit的历史
+git log  
+#跳到某次commit
+git reset --hard <commit_id> 
+撤销之后，由于本地版本低于线上版本，想要提交代码，只能强行提交，覆盖线上，可以使用下面的命令：
+git push -f origin 分支名
+
+
+
+
+
 上传本地所有分支代码到远程对应的分支上
 git push
+不行时可用git push -u origin master
 
 上传本地当前分支代码到master分支
 git push origin master
@@ -38,8 +72,19 @@ git checkout master
 把分支bran_x上的内容合并到当前分支
 git merge bran_x
 
-删除分支bran_x
+新建分支trunk_x
+git branch trunk_x
+
+删除本地分支bran_x
 git branch -d bran_x
+
+查看仓库的分支列表
+git branch 或 gt branch -v
+
+删除远程分支trunk_x,这等同于推送一个空的本地分支到远程分支
+git push origin :trunk_x
+等价于
+git push origin --delete trunk_x
 
 查看提交历史
 git log
@@ -47,3 +92,39 @@ git log -p file
 
 撤销提交
 git reset 
+
+查看远程端仓库权限
+git remote -v
+
+
+查看当前Git的版本
+git version
+
+
+查看git项目的配置
+git config --list
+全局配置
+git config --global user.name "username"
+取消全局配置
+git config --global --unset user.name
+
+进入文件夹,单独设置每个仓库的配置
+git config user.name "username"
+
+
+#################################
+新建分支trunk_x，并切换到trunk_x分支下
+git checkout -b trunk_x
+在分支下做改动后要提交内容执行以下命令(将本地trunk_x分支上的改动内容提交到远程master分支下)
+git push origin trunk_x:master
+
+如果要把本地分支trunk_x修改内容提交到远程分支trunk_x下
+git push origin trunk_x:trunk_x
+
+
+#################################
+GitHub Git Bash中文乱码解决：
+在对应的库下面.git(隐藏)文件夹下找到config文件
+编辑文件在最后一行加上:encoding = utf-8
+
+
