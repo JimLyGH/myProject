@@ -24,15 +24,13 @@ public class FormatHTMLLayout extends HTMLLayout {
 
 	String title = "Log4j Log Mail";
 
-	/**
-	 * A string constant used in naming the option for setting the the HTML
-	 * document title. Current value of this string constant is <b>Title</b>.
-	 */
 	public static final String TITLE_OPTION = "Title";
 
-	// Print no location info by default
 	boolean locationInfo = true;
 
+	/**
+	 * 获取body内容HTML
+	 */
 	public String format(LoggingEvent event) {
 		if (sbuf.capacity() > MAX_CAPACITY) {
 			sbuf = new StringBuffer(BUF_SIZE);
@@ -107,7 +105,7 @@ public class FormatHTMLLayout extends HTMLLayout {
 	}
 
 	/**
-	 * Returns appropriate HTML headers.
+	 * 获取head内容HTML
 	 */
 	public String getHeader() {
 		StringBuffer sbuf = new StringBuffer();
@@ -149,6 +147,10 @@ public class FormatHTMLLayout extends HTMLLayout {
 		return sbuf.toString();
 	}
 
+	
+	/**
+	 * 获取foot内容HTML
+	 */
 	public String getFooter() {
 		StringBuffer sbuf = new StringBuffer();
 		sbuf.append("</table>" + Layout.LINE_SEP);
