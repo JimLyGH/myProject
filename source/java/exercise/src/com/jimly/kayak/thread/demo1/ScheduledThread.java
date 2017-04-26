@@ -13,7 +13,7 @@ public class ScheduledThread {
 
 	public static void main(String[] args) {
 		
-		delayMtthod();
+//		delayMtthod();
 		
 		regularMethod();
 	}
@@ -24,27 +24,48 @@ public class ScheduledThread {
 		
 		ScheduledExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(5);
 		
-		scheduledThreadPool.schedule(new Runnable() {
+		for (int i = 0; i < 10; i++) {
+			final int index = i;
 			
-			@Override
-			public void run() {
-				System.out.println("delay 5 seconds execute!!!");
-			}
-		}, 5, TimeUnit.SECONDS);
+			scheduledThreadPool.schedule(new Runnable() {
+				
+				@Override
+				public void run() {
+					System.out.println("index=" + index + ", Thread Name:" + Thread.currentThread().getName());
+					
+					try {
+						Thread.sleep(5000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}, 5, TimeUnit.SECONDS);
+		}
 		
 	}
 	
-	//定期执行代码,程序延迟1秒后每5秒执行一次
+	//定期执行代码,程序延迟1秒后每30秒执行一次
 	static public void regularMethod() {
 		ScheduledExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(5);
 		
-		scheduledThreadPool.scheduleAtFixedRate(new Runnable() {
+		for (int i = 0; i < 10; i ++) {
+			final int index = i;
 			
-			@Override
-			public void run() {
-				System.out.println("delay 1 seconds, and execute every 5 seconds!!!");
-			}
-		}, 1, 5, TimeUnit.SECONDS);
+			scheduledThreadPool.scheduleAtFixedRate(new Runnable() {
+				
+				@Override
+				public void run() {
+//					System.out.println("delay 1 seconds, and execute every 30 seconds!!!");
+					System.out.println("index=" + index + ", Thread Name:" + Thread.currentThread().getName());
+					
+					try {
+						Thread.sleep(5000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}, 1, 30, TimeUnit.SECONDS);
+		}
 		
 	} 
 	
