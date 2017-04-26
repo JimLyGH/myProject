@@ -21,6 +21,9 @@ public class Junit001 {
 		
 		String[] e = new String[10];
 		System.out.println("String:" + e[0]);
+		
+		String s = new String();
+		System.out.println("[" + s + "]");
 	}
 	
 	/**
@@ -31,6 +34,7 @@ public class Junit001 {
 		int:0
 		long:0
 		String:null
+		[]
 	 * */
 	
 	@Test
