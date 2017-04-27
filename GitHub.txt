@@ -130,5 +130,6 @@ git push origin trunk_x:trunk_x
 GitHub Git Bash中文乱码解决：
 在对应的库下面.git(隐藏)文件夹下找到config文件
 编辑文件在最后一行加上:encoding = utf-8
+或者：在Git Bash中右击-Options-Text-Locale选择zn_ch-UTF-8
 
 
