@@ -7,8 +7,8 @@ java反射机制: JAVA反射机制是在运行状态中，
 
 
 getFields()与getDeclaredFields()区别:
-	getFields()只能访问类中声明为公有的字段,私有的字段它无法访问，能访问从其它类继承来的公有方法.
-	getDeclaredFields()能访问类中所有的字段,与public,private,protect无关，不能访问从其它类继承来的方法  
+	getFields()只能访问类中声明为公有的字段,私有的字段它无法访问，能访问从其它类继承来的公有字段.
+	getDeclaredFields()能访问类中所有的字段,与public,private,protect无关，不能访问从其它类继承来的字段 
 
 getMethods()与getDeclaredMethods()区别:
 	getMethods()只能访问类中声明为公有的方法,私有的方法它无法访问,能访问从其它类继承来的公有方法.
