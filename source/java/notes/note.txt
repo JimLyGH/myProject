@@ -24,3 +24,14 @@ DAL:	数据访问层			Data Access Layer
 OOA：	面向对象分析		Object Oriented Analysis
 OOD：	面向对象设计		Object Oriented Design
 OOP：	面向对象编程		Object Oriented Programming
+
+
+############################################################
+Java SE=Java Standard Edition
+Java EE=Java Enterprise Edition
+Java ME=Java Mobile Edition
+
+SE主要用于桌面程序,控制台开发(JFC)
+EE企业级开发(JSP,EJB)
+ME嵌入式开发(手机,小家电)
+############################################################
