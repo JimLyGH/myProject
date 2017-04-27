@@ -7,4 +7,4 @@ demo1006	类的初始化过程案例(对比main方法在Entrance里执行和在A
 demo1007	抽象类与接口的使用场景案例分析
 demo1008	transient以及两种序列化的使用案例
 demo1009	父类(基类)-子类继承关系解读案例
-demo1010	
+demo1010	JAVA反射机制
