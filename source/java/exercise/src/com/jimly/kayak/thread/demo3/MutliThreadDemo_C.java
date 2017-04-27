@@ -20,7 +20,7 @@ public class MutliThreadDemo_C {
 }
 
 class MutliThread_C implements Runnable {
-	private int ticket = 100;// 每个线程都拥有100张票
+	private int ticket = 10;// 每个线程都拥有10张票
 
 	public void run() {
 		while (ticket > 0) {

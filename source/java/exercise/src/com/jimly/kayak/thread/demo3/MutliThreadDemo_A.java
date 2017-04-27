@@ -8,9 +8,9 @@ public class MutliThreadDemo_A {
 
 	public static void main(String[] args) {
 
-		MutliThread_A m1 = new MutliThread_A("Window 1");
-		MutliThread_A m2 = new MutliThread_A("Window 2");
-		MutliThread_A m3 = new MutliThread_A("Window 3");
+		MutliThread_A m1 = new MutliThread_A("Ticket_Seller_1");
+		MutliThread_A m2 = new MutliThread_A("Ticket_Seller_2");
+		MutliThread_A m3 = new MutliThread_A("Ticket_Seller_3");
 
 		m1.start();
 		m2.start();
@@ -20,7 +20,7 @@ public class MutliThreadDemo_A {
 }
 
 class MutliThread_A extends Thread {
-	private int ticket = 100;// 每个线程都拥有100张票
+	private int ticket = 10;// 每个线程都拥有10张票
 
 	public MutliThread_A() {
 	}
