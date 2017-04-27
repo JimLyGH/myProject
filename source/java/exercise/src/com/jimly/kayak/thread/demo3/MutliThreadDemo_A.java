@@ -2,7 +2,7 @@ package com.jimly.kayak.thread.demo3;
 
 
 /**
- * 通过继承Thread类
+ * 通过扩展Thread类来创建多线程
  * */
 public class MutliThreadDemo_A {
 

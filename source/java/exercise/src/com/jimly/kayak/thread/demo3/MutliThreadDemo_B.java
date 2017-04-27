@@ -2,7 +2,7 @@ package com.jimly.kayak.thread.demo3;
 
 
 /**
- * 通过实现Runnable接口
+ * 通过实现Runnable接口来创建多线程
  * */
 public class MutliThreadDemo_B {
 
