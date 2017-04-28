@@ -15,7 +15,7 @@ public class NIO_MBB {
 	
 	public static void main(String[] args) throws IOException {
 		
-		String inputFile = "e://work.txt";
+		String inputFile = "e://int.txt";
 		String outputFile = "e://out.txt";
 		
 		RandomAccessFile inf = new RandomAccessFile(inputFile, "r");
@@ -28,14 +28,26 @@ public class NIO_MBB {
 		
 		MappedByteBuffer buffer = ifc.map(FileChannel.MapMode.READ_ONLY, 0, length);
 		
-		Charset latin1 = Charset.forName("ISO-8859-1");
+		// 创建 UTF-8 字符集的一个实例
+		Charset latin1 = Charset.forName("UTF-8");
+		// 创建一个解码器(用于读取)
 		CharsetDecoder decoder = latin1.newDecoder();
+		// 创建一个编码器 (用于写入)
 		CharsetEncoder encoder = latin1.newEncoder();
 		
+		// 将字节数据解码为一组字符
 		CharBuffer cBuffer = decoder.decode(buffer);
 		
+		// 如果想要处理字符，我们可以在程序的此处进行
+		//……
+		System.out.println(cBuffer);
+		
+		// 无改变地将它写回
 		ByteBuffer outputData = encoder.encode(cBuffer);
 		
+//		System.out.println(new String(outputData.array()));
+		
+		// 将数据写到文件中
 		ofc.write(outputData);
 		
 		inf.close();
