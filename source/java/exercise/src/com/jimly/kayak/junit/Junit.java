@@ -4,8 +4,8 @@ import java.lang.reflect.Method;
 
 import org.junit.Test;
 
-import com.jimly.kayak.tool.Person;
-import com.jimly.kayak.tool.Worker;
+import com.jimly.kayak.entity.Person;
+import com.jimly.kayak.entity.Worker;
 
 
 public class Junit {

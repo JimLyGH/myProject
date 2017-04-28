@@ -1,4 +1,4 @@
-package com.jimly.kayak.tool;
+package com.jimly.kayak.entity;
 
 public class Person {
 
