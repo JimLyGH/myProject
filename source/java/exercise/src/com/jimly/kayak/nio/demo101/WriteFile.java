@@ -31,6 +31,10 @@ public class WriteFile {
 
 		//第三步,写入缓冲区
 		ofc.write(buffer);
+		
+		ofc.close();
+		fos.flush();
+		fos.close();
 
 	}
 

@@ -16,11 +16,11 @@ public class Read_Write {
 
 	public static void main(String[] args) throws IOException {
 
-		FileInputStream fic = new FileInputStream("e://work.txt");
-		FileChannel ifc = fic.getChannel();
+		FileInputStream fis = new FileInputStream("e://work.txt");
+		FileChannel ifc = fis.getChannel();
 		
-		FileOutputStream foc = new FileOutputStream("e://copy.txt");
-		FileChannel ofc = foc.getChannel();
+		FileOutputStream fos = new FileOutputStream("e://copy.txt");
+		FileChannel ofc = fos.getChannel();
 		
 		ByteBuffer buffer = ByteBuffer.allocate(24);
 		
@@ -40,6 +40,13 @@ public class Read_Write {
 			
 			// 从输出通道中将数据写入缓冲区
 			ofc.write(buffer);
+
+			ofc.close();
+			fos.flush();
+			fos.close();
+
+			ifc.close();
+			fis.close();
 		}
 		
 		

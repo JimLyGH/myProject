@@ -19,13 +19,20 @@ public class ReadFile {
 		FileInputStream fis = new FileInputStream("e://work.txt");
 		FileChannel ifc = fis.getChannel();
 
-		// 第二步,创建缓冲区,开辟一个长度为1024字节的缓冲区
+		// 第二步,创建缓冲区,开辟一个长度为1024字节的缓冲区(1)
 		ByteBuffer buffer = ByteBuffer.allocate(1024);
+		
+		// 或者使用一个现有数组转换为缓冲区(2)
+//		byte[] array = new 	byte[1024];
+//		ByteBuffer buffer = ByteBuffer.wrap(array); 
 
 		// 第三步,将数据从通道读取到缓冲区
 		ifc.read(buffer);
 		
 		System.out.println(new String(buffer.array()));
+		
+		ifc.close();
+		fis.close();
 
 	}
 
