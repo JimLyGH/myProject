@@ -11,6 +11,10 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
+
+/**
+ * Selector以非阻塞模式运行的Server端代码,它可以从多个Client接收数据
+ * */
 public class SelectorServerTest {
 
     public static void main(String args[]) throws IOException, InterruptedException {
