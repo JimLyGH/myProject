@@ -13,9 +13,11 @@ import java.io.IOException;
 public class R_W_Buffer_B {
 
 	public static void main(String[] args) {
+		
+		long start = System.currentTimeMillis();
 
-		String src = "E:/demo6.txt";
-		String des = "E:/copy.txt";
+		String src = "E:/work.txt";
+		String des = "E:/out.txt";
 
 		FileReader fr = null;
 		FileWriter fw = null;
@@ -38,6 +40,10 @@ public class R_W_Buffer_B {
 			}
 
 			bw.flush();
+			
+			long end = System.currentTimeMillis();
+			
+			System.out.println((end - start) / 1000 + " s");
 
 		} catch (IOException e) {
 			System.out.println("读写时异常:" + e);

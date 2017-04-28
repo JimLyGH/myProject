@@ -15,7 +15,9 @@ public class NIO_MBB {
 	
 	public static void main(String[] args) throws IOException {
 		
-		String inputFile = "e://int.txt";
+		long start = System.currentTimeMillis();
+		
+		String inputFile = "e://work.txt";
 		String outputFile = "e://out.txt";
 		
 		RandomAccessFile inf = new RandomAccessFile(inputFile, "r");
@@ -40,7 +42,7 @@ public class NIO_MBB {
 		
 		// 如果想要处理字符，我们可以在程序的此处进行
 		//……
-		System.out.println(cBuffer);
+//		System.out.println(cBuffer);
 		
 		// 无改变地将它写回
 		ByteBuffer outputData = encoder.encode(cBuffer);
@@ -49,6 +51,10 @@ public class NIO_MBB {
 		
 		// 将数据写到文件中
 		ofc.write(outputData);
+		
+		long end = System.currentTimeMillis();
+		
+		System.out.println("读取" + (length / 1024 / 1024) + "M文件用时" + (end - start) / 1000 + "s");
 		
 		inf.close();
 		outf.close();
