@@ -6,6 +6,7 @@ import java.nio.*;
 import java.nio.channels.*;
 import java.util.*;
 
+@SuppressWarnings({"unused", "rawtypes"})
 public class MultiPortEcho
 {
   private int ports[];
