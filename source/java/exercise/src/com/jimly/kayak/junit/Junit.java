@@ -56,7 +56,7 @@ public class Junit {
 	@SuppressWarnings("rawtypes")
 	public void test4() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		System.out.println("########## TEST 4  ##########");
-		Class cla = Class.forName("com.jimly.kayak.tool.Person");
+		Class cla = Class.forName("com.jimly.kayak.entity.Person");
 		Person p = (Person) cla.newInstance();
 		
 		Method[] m = cla.getMethods();
