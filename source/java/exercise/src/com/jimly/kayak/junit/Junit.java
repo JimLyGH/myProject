@@ -135,7 +135,36 @@ public class Junit {
 	
 	@Test
 	public void test8() {
-
+		System.out.println("########## TEST 8  ##########");
+		
+		StringBuffer s = new StringBuffer("hello ");
+		StringBuffer s1 = s;
+		String s2 = s.toString();
+		s1.append("world ");
+		System.out.println("s: " + s);
+		System.out.println("s1: " + s1);
+		System.out.println("s2: " + s2);
+		
+		System.out.println("#######################");
+		
+		s.append("bye");
+		System.out.println("s: " + s);
+		System.out.println("s1: " + s1);
+		System.out.println("s2: " + s2);
+		
+		
+		/**
+		 * 运行结果:
+		 * 
+		 * 	########## TEST 8  ##########
+			s: hello world 
+			s1: hello world 
+			s2: hello 
+			#######################
+			s: hello world bye
+			s1: hello world bye
+			s2: hello 
+		 * */
 	}
 	
 	@Test
