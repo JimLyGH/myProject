@@ -87,3 +87,14 @@ order by c.COLUMN_ID;
 select *, row_number() over(partition by moduleid order by paramid) rank
 from sys_param;
 
+
+--拼接数据库序列化脚本
+select 'create sequence ' || ds.sequence_name || 
+       ' minvalue ' || ds.min_value ||
+       ' maxvalue ' || ds.max_value ||
+       ' start with ' || ds.last_number ||
+       ' increment by ' || ds.increment_by ||
+       decode(ds.cache_size, 0, ' nocache ', ' cache ' || ds.cache_size) ||
+       decode(ds.cycle_flag, 'Y', ' cycle;')
+from dba_sequences ds
+where ds.sequence_owner = 'SIT';
