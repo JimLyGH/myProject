@@ -2,7 +2,12 @@ package com.jimly.kayak.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
+
+/**
+ * JDK实现动态代理
+ * */
 public class LogInteceptor implements InvocationHandler{
 
 	private Object target;	//被代理对象
@@ -27,5 +32,14 @@ public class LogInteceptor implements InvocationHandler{
 	public void setTarget(Object target) {
 		this.target = target;
 	}
+	
+	
+	//重构得到代理代码
+	@SuppressWarnings("unchecked")
+	public <T> T getProxy() {
+		return (T) Proxy.newProxyInstance(target.getClass().getClassLoader(),
+				target.getClass().getInterfaces(), this);
+	}
+	
 
 }
