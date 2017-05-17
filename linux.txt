@@ -11,6 +11,28 @@ grep -rn --exclude-dir="7" "123" *
 只显示文件夹：ll | grep ^d
 只显示文件：ll | grep ^-
 
+
+1）查看占用CPU最高的5个进程
+＃ ps aux | sort -k3rn | head -5
+或者
+＃ top （然后按下P，注意大写，CPU使用率降序）
+ 
+2）查看占用内存最高的5个进程
+＃ ps aux | sort -k4rn | head -5
+或者
+＃ top （然后按下M，注意大写，内存使用率降序）
+ 
+3）查看所有信息使用命令
+＃ ps aux
+
+sort|uniq 排序去重
+sort|uniq -c 打印重复的次数
+sort|uniq -d 打印交集的部分
+sort|uniq -u 打印去掉交集的部分
+sort -rn 降序
+sort -k3rn 按照第三列降序
+
+
 linux sftp上传
 
 登录
