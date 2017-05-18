@@ -1,2 +1,5 @@
 source/java/exercise/bin/*
+source/java/exercise/bin/.settings
+source/java/exercise/bin/.classpath
+source/java/exercise/bin/.project
 *.log
