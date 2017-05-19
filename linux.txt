@@ -32,6 +32,8 @@ sort|uniq -u 打印去掉交集的部分
 sort -rn 降序
 sort -k3rn 按照第三列降序
 
+#根据进程查询进程对应的端口号
+netstat -nlp | grep fnlisten
 
 linux sftp上传
 
