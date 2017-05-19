@@ -10,3 +10,4 @@ demo1009	父类(基类)-子类继承关系解读案例
 demo1010	JAVA反射机制
 demo1011	JAVA方法的形参个数可变案例
 demo1012	接口 对象 = new 实现类(); 与 实现类 对象 = new 实现类();
+demo1013	自定义Exception
