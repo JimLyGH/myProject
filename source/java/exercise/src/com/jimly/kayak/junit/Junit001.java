@@ -1,5 +1,7 @@
 package com.jimly.kayak.junit;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 import org.junit.Test;
 
 public class Junit001 {
@@ -62,6 +64,21 @@ public class Junit001 {
 		flag1=false
 		flag2=false
 		flag3=false
+	 * */
+	
+	
+	@Test
+	public void junit03() {
+		System.out.println("########## JUnit_001_3  ##########");
+		final AtomicInteger i = new AtomicInteger(123);
+		i.addAndGet(123);
+		System.out.println(i);
+	}
+	
+	/**
+	 * 输出结果：
+	 * 	########## JUnit_001_3  ##########
+		246
 	 * */
 
 }
