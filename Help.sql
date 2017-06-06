@@ -98,3 +98,12 @@ select 'create sequence ' || ds.sequence_name ||
        decode(ds.cycle_flag, 'Y', ' cycle;')
 from dba_sequences ds
 where ds.sequence_owner = 'SIT';
+
+
+--查询锁表
+select o.owner, o.object_name, s.sid, s.serial#, l.os_user_name
+from v$locked_object l, dba_objects o,v$session s
+where l.OBJECT_ID = o.OBJECT_ID and l.SESSION_ID = s.sid;
+
+--去锁
+alter system kill session 'SID,SERIAL#';
